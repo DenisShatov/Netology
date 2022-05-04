@@ -84,33 +84,33 @@ def main():
                         'полки на целевую'
                         '\nas – команда, которая спросит номер новой полки и добавит ее в перечень'
                         '\nexit - команда, которая закроет программу\n')
-        if command == 'p':
-            print(people_name(input('Введите № документа: ')))
-
-        elif command == 's':
-            print(shelf_num(input('Введите № документа: ')))
-
-        elif command == 'l':
-            list_doc()
-
-        elif command == 'a':
-            print(add_doc(input('Введите № документа: '), input('\nВведите Тип документа: '),
-                          input('\nВведите Имя владельца: '), input('\nВведите № полки: ')))
-
-        elif command == 'd':
-            print(del_doc(input('Введите № документа: ')))
-
-        elif command == 'm':
-            print(move_doc(input('Введите № документа: '),
-                           input('\nВведите № полки, на которую переместить документ: ')))
-
-        elif command == 'as':
-            print(add_shelf(input('Введите № новой полки: ')))
-
-        elif command == 'exit':
-            break
-
-        else:
-            print('Введена некорректная команда, введите команду из списка')
+        # if command == 'p':
+        #     print(people_name(input('Введите № документа: ')))
+        #
+        # elif command == 's':
+        #     print(shelf_num(input('Введите № документа: ')))
+        #
+        # elif command == 'l':
+        #     list_doc()
+        #
+        # elif command == 'a':
+        #     print(add_doc(input('Введите № документа: '), input('\nВведите Тип документа: '),
+        #                   input('\nВведите Имя владельца: '), input('\nВведите № полки: ')))
+        #
+        # elif command == 'd':
+        #     print(del_doc(input('Введите № документа: ')))
+        #
+        # elif command == 'm':
+        #     print(move_doc(input('Введите № документа: '),
+        #                    input('\nВведите № полки, на которую переместить документ: ')))
+        #
+        # elif command == 'as':
+        #     print(add_shelf(input('Введите № новой полки: ')))
+        #
+        # elif command == 'exit':
+        #     break
+        #
+        # else:
+        #     print('Введена некорректная команда, введите команду из списка')
 
 main()
